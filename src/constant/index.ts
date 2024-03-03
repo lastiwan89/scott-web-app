@@ -73,3 +73,43 @@ export const ABOUT_VALUES: Values[] = [
     url: "/images/our-community.jpg",
   },
 ];
+
+// Job section
+type Job = {
+  id: number;
+  job: string;
+  location: string;
+};
+
+export const CAREER_JOBS: Job[] = [
+  {
+    id: 1,
+    job: "General Manager",
+    location: "Jakarta, Indonesia",
+  },
+  {
+    id: 2,
+    job: "UI/UX Designer",
+    location: "Yokohama, Japan",
+  },
+  {
+    id: 3,
+    job: "Blog Content Copywriter",
+    location: "New York, United States",
+  },
+  {
+    id: 4,
+    job: "Graphic Designer",
+    location: "New York, United States",
+  },
+  {
+    id: 5,
+    job: "Fleet Supervisor",
+    location: "Jakarta, Indonesia",
+  },
+  {
+    id: 6,
+    job: "UX Analyst",
+    location: "London, United Kingdom",
+  },
+];
