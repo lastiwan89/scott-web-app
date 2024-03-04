@@ -6,7 +6,7 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <section className="about-hero flex items-center py-16 md:px-24 md:py-24">
+      <section className="about-hero flex items-center justify-center py-16 md:justify-start md:px-24 md:py-24">
         <h2 className="text-center font-mono text-40 font-bold text-grey-snow md:text-start md:text-56">
           About
         </h2>
