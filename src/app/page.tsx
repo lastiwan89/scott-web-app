@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main>
       {/* home hero section */}
-      <section className="home-hero px-8 pb-32 pt-28">
-        <h3 className="text-center font-mono text-40 font-bold text-grey-snow">
+      <section className="home-hero flex flex-col items-center px-8 pb-32 pt-28 md:px-24">
+        <h3 className="text-center font-mono text-40 font-bold text-grey-snow md:text-56">
           Scooter sharing made simple
         </h3>
         <div>
@@ -21,24 +21,40 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* home how to section */}
-      <section className="grid px-8 py-28">
+      <section className="grid px-8 py-28 md:px-24">
         {HOME_APP.map((item) => (
-          <div className="mb-12 flex flex-col items-center gap-6" key={item.id}>
-            <Image src={item.url} width={56} height={56} alt={item.title} />
-            <h4 className="text-center font-mono text-20 font-bold">
-              {item.title}
-            </h4>
-            <p className="text-center font-sans text-15 font-normal">
-              {item.body}
-            </p>
+          <div
+            className="mb-12 flex flex-col items-center gap-6 md:flex-row md:gap-20"
+            key={item.id}
+          >
+            <div>
+              <Image
+                className="w-14 md:w-56"
+                src={item.url}
+                width={96}
+                height={96}
+                alt={item.title}
+              />
+            </div>
+            <div className="flex flex-col gap-6">
+              <h4 className="text-center font-mono text-20 font-bold text-grey-dark md:text-start md:text-24">
+                {item.title}
+              </h4>
+              <p className="text-center font-sans text-15 font-normal text-grey-dimmed md:text-start">
+                {item.body}
+              </p>
+            </div>
           </div>
         ))}
       </section>
+
       {/* ease to use section */}
-      <section className="pb-24 pt-2">
+      <section className="px-8 pb-24 pt-2 md:px-24">
+        {/* this components need to create without external sources */}
         {HOME_BENEFIT.map((item) => (
-          <div className="grid items-center gap-8 px-8 py-8" key={item.id}>
+          <div className="flex flex-col items-center gap-8 py-8" key={item.id}>
             <Image
               className="rounded-full"
               src={item.url}

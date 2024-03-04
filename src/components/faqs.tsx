@@ -31,12 +31,13 @@ export default function AboutFaqs() {
   return (
     <div className="flex flex-col gap-12">
       <div>
-        <h4 className="text-center font-mono text-32 font-bold text-grey-dark">
+        <h4 className="text-center font-mono text-32 font-bold text-grey-dark md:text-48">
           FAQs
         </h4>
       </div>
+
       <section className="flex flex-col gap-8">
-        <h4 className="text-center font-mono text-24 font-bold text-grey-dark">
+        <h4 className="text-center font-mono text-24 font-bold text-grey-dark md:text-40">
           How it works
         </h4>
         <div className="flex flex-col gap-4">

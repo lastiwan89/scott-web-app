@@ -6,13 +6,14 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <section className="about-hero grid place-content-center py-16">
-        <h2 className="text-center font-mono text-40 font-bold text-grey-snow">
+      <section className="about-hero flex items-center py-16 md:px-24 md:py-24">
+        <h2 className="text-center font-mono text-40 font-bold text-grey-snow md:text-start md:text-56">
           About
         </h2>
       </section>
       {/* section 2 */}
-      <section className="flex flex-col items-center gap-32 px-8 py-14">
+
+      <section className="flex flex-col items-center gap-32 px-8 pb-14 pt-14 md:px-24 md:pt-36">
         <div className="flex flex-col items-center gap-14">
           <div className="flex items-center justify-center">
             <Image
@@ -24,7 +25,7 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col gap-8">
-            <h4 className="text-center font-mono text-32 font-bold text-grey-dark">
+            <h4 className="text-center font-mono text-32 font-bold text-grey-dark md:text-48">
               Mobility for the digital era
             </h4>
             <p className="text-center font-sans text-15 font-normal text-grey-dimmed">
@@ -34,6 +35,7 @@ export default function About() {
             </p>
           </div>
         </div>
+
         <div className="flex flex-col items-center gap-14">
           <div className="flex items-center justify-center">
             <Image
@@ -45,7 +47,7 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col gap-8">
-            <h4 className="px-8 text-center font-mono text-32 font-bold text-grey-dark">
+            <h4 className="px-8 text-center font-mono text-32 font-bold text-grey-dark md:text-48">
               Better urban living
             </h4>
             <p className="text-center font-sans text-15 font-normal text-grey-dimmed">
@@ -56,16 +58,21 @@ export default function About() {
           </div>
         </div>
       </section>
+
       {/* section 3 */}
-      <section className="mt-6 px-8">
+      <section className="mt-6 px-8 md:px-24">
         <div>
-          <h3 className="text-center font-mono text-32 font-bold text-grey-dark">
+          <h3 className="text-center font-mono text-32 font-bold text-grey-dark md:text-48">
             Our values
           </h3>
         </div>
+
         <div className="flex flex-col gap-14 py-16">
           {ABOUT_VALUES.map((item) => (
-            <div key={item.id}>
+            <div
+              className="flex flex-col items-center gap-4 md:gap-8"
+              key={item.id}
+            >
               <div className="flex flex-col items-center">
                 <Image
                   className="rounded-full"
@@ -80,11 +87,12 @@ export default function About() {
                   </h4>
                 </div>
               </div>
+
               <div className="flex flex-col items-center gap-7">
                 <h4 className="text-center font-mono text-24 font-bold text-grey-dark">
                   {item.title}
                 </h4>
-                <p className="text-center font-sans text-15 font-normal text-grey-dark">
+                <p className="text-center font-sans text-15 font-normal text-grey-dimmed">
                   {item.body}
                 </p>
               </div>
@@ -92,6 +100,7 @@ export default function About() {
           ))}
         </div>
       </section>
+
       {/* faqs section */}
       <section className="px-8 pb-24 pt-14">
         <AboutFaqs />
