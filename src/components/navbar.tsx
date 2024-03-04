@@ -5,18 +5,37 @@ import Hamburger from "./hamburger";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-start gap-x-16 px-8 py-6">
+    <nav className="flex items-center justify-between gap-x-16 px-8 py-6">
       <Hamburger />
-      <Link href="/">
-        <Logo />
-      </Link>
-      <div className="hidden md:flex">
-        <Link href="/about">About</Link>
-        <Link href="/location">Location</Link>
-        <Link href="/career">Careers</Link>
+      <div className="flex items-center gap-x-14">
+        <Link href="/">
+          <Logo />
+        </Link>
+        <div className="hidden gap-8 md:flex">
+          <Link
+            className="font-mono text-15 font-bold text-grey-dimmed"
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="font-mono text-15 font-bold text-grey-dimmed"
+            href="/location"
+          >
+            Location
+          </Link>
+          <Link
+            className="font-mono text-15 font-bold text-grey-dimmed"
+            href="/career"
+          >
+            Careers
+          </Link>
+        </div>
       </div>
-      <Link className="hidden" href="/career">
-        <button>Get Scootin</button>
+      <Link className="hidden md:block" href="/career">
+        <button className="bg-yellow-dark px-9 py-3 font-mono text-15 font-bold text-grey-snow">
+          Get Scootin
+        </button>
       </Link>
     </nav>
   );
