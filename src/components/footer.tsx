@@ -5,7 +5,7 @@ import Logo from "./logo";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex flex-col items-center gap-10 bg-grey-dark px-8 py-16 lg:flex-row lg:justify-between">
+      <div className="flex flex-col items-center gap-10 bg-grey-dark px-8 py-16 lg:flex-row lg:justify-between lg:px-40">
         <div>
           <h1 className="text-center font-mono text-32 font-bold text-grey-snow md:w-[457px] md:text-48 lg:text-start">
             Sign up and Scoot off today
@@ -26,7 +26,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center gap-10 bg-grey-darker px-8 py-16 md:flex-row md:justify-between md:py-9">
+      <div className="flex flex-col items-center gap-10 bg-grey-darker px-8 py-16 md:flex-row md:justify-between md:py-9 lg:px-40">
         <div className="flex flex-col items-center gap-10 md:flex-row md:gap-x-14">
           <div>
             <Logo type="footer" />

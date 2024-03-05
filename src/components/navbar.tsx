@@ -5,7 +5,7 @@ import Hamburger from "./hamburger";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between gap-x-16 px-8 py-6">
+    <nav className="flex items-center justify-between gap-x-16 px-8 py-6 lg:px-40">
       <Hamburger />
       <div className="flex items-center gap-x-14">
         <Link href="/">
