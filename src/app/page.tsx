@@ -54,7 +54,7 @@ export default function Home() {
       <section className="flex flex-col gap-8 px-8 pb-24 pt-2 md:px-24 lg:gap-40 lg:px-40">
         {/* source fixed */}
         <div className="flex flex-col items-center gap-8 py-8 lg:grid lg:grid-cols-2 lg:place-content-center lg:gap-56">
-          <div className="order-last place-self-end">
+          <div className="lg:order-last lg:place-self-end">
             <Image
               className="rounded-full"
               src="/images/telemetry.jpg"
@@ -68,7 +68,7 @@ export default function Home() {
             <h4 className="text-center font-mono text-32 font-bold lg:text-start lg:text-48">
               Easy to use riding telemetry
             </h4>
-            <p className="text-center font-sans text-15 font-normal lg:text-start">
+            <p className="text-center font-sans text-15 font-normal text-grey-dimmed lg:text-start">
               The Scoot app is available with riding telemetry. This means it
               can show you your average speed, how long you have been using the
               scooter, your traveling distance, and many more things all in an
@@ -95,7 +95,7 @@ export default function Home() {
             <h4 className="text-center font-mono text-32 font-bold lg:text-start lg:text-48">
               Coming to a city near you
             </h4>
-            <p className="text-center font-sans text-15 font-normal lg:text-start">
+            <p className="text-center font-sans text-15 font-normal text-grey-dimmed lg:text-start">
               Scoot is available in 4 major cities so far. We’re expanding
               rapidly, so be sure to let us know if you want to see us in your
               hometown. We’re aiming to let our scooters loose on 23 cities over
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-center gap-8 py-8 lg:grid lg:grid-cols-2">
-          <div className="order-last place-self-end">
+          <div className="lg:order-last lg:place-self-end">
             <Image
               className="rounded-full"
               src="/images/payments.jpg"
@@ -122,7 +122,7 @@ export default function Home() {
             <h4 className="text-center font-mono text-32 font-bold lg:text-start lg:text-48">
               Zero hassle payments
             </h4>
-            <p className="text-center font-sans text-15 font-normal lg:text-start">
+            <p className="text-center font-sans text-15 font-normal text-grey-dimmed lg:text-start">
               Our payment is as easy as one two three. We accept most credit
               cards and debit cards. You can also link your PayPal account
               inside the app. Need to pay later? No worries! You can defer
