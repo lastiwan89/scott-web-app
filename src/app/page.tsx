@@ -51,9 +51,9 @@ export default function Home() {
       </section>
 
       {/* ease to use section */}
-      <section className="flex flex-col gap-8 px-8 pb-24 pt-2 md:px-24 lg:gap-40 lg:px-40">
+      <section className="-mt-10 flex flex-col gap-14 px-8 pb-24 md:px-24 lg:gap-40 lg:px-40">
         {/* source fixed */}
-        <div className="flex flex-col items-center gap-8 py-8 lg:grid lg:grid-cols-2 lg:place-content-center lg:gap-56">
+        <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2 lg:place-content-center lg:gap-56">
           <div className="lg:order-last lg:place-self-end">
             <Image
               className="rounded-full"
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 py-8 lg:grid lg:grid-cols-2">
+        <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2">
           <div>
             <Image
               className="rounded-full"
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 py-8 lg:grid lg:grid-cols-2">
+        <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2">
           <div className="lg:order-last lg:place-self-end">
             <Image
               className="rounded-full"
