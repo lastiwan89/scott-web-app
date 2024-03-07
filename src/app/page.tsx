@@ -63,8 +63,9 @@ export default function Home() {
               alt="telemetry"
             />
           </div>
+          {/* space between this image and paragraph below in mobile view is too large */}
 
-          <div className="mt-8 flex flex-col items-center gap-8 lg:mt-0 lg:items-start lg:gap-6">
+          <div className="flex flex-col items-center gap-8 lg:mt-0 lg:items-start lg:gap-6">
             <h4 className="text-center font-mono text-32 font-bold lg:text-start lg:text-48">
               Easy to use riding telemetry
             </h4>
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2">
+        <div className="mt-8 flex flex-col items-center gap-8 lg:grid lg:grid-cols-2">
           <div>
             <Image
               className="rounded-full"
@@ -91,7 +92,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-8 flex flex-col items-center gap-8 lg:mt-0 lg:items-start lg:gap-6">
+          <div className="flex flex-col items-center gap-8 lg:mt-0 lg:items-start lg:gap-6">
             <h4 className="text-center font-mono text-32 font-bold lg:text-start lg:text-48">
               Coming to a city near you
             </h4>
@@ -107,7 +108,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 lg:grid lg:grid-cols-2">
+        <div className="mt-8 flex flex-col items-center gap-8 lg:grid lg:grid-cols-2">
           <div className="lg:order-last lg:place-self-end">
             <Image
               className="rounded-full"
@@ -118,7 +119,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-8 flex flex-col items-center gap-8 lg:mt-0 lg:items-start lg:gap-6">
+          <div className="flex flex-col items-center gap-8 lg:mt-0 lg:items-start lg:gap-6">
             <h4 className="text-center font-mono text-32 font-bold lg:text-start lg:text-48">
               Zero hassle payments
             </h4>
