@@ -68,27 +68,27 @@ export default function Navbar() {
 
       {/* overlay nav */}
       <div
-        className={`${open ? "fixed" : "hidden"} top-[77px] h-full w-full bg-grey-darker/40`}
+        className={`${open ? "fixed" : "hidden"} top-[77px] h-full w-full bg-grey-darker/70`}
       >
-        <div className="flex h-full w-2/3 flex-col gap-80 bg-grey-darker pb-6 pl-8 pt-16">
+        <div className="grid h-full w-2/3 gap-80 bg-grey-darker pb-6 pl-8 pt-16">
           <div className="flex flex-col gap-6">
             <Link
               onClick={handleOpen}
-              className="font-mono text-15 font-bold text-grey-dimmed"
+              className="font-mono text-15 font-bold text-grey-light"
               href="/about"
             >
               About
             </Link>
             <Link
               onClick={handleOpen}
-              className="font-mono text-15 font-bold text-grey-dimmed"
+              className="font-mono text-15 font-bold text-grey-light"
               href="/location"
             >
               Location
             </Link>
             <Link
               onClick={handleOpen}
-              className="font-mono text-15 font-bold text-grey-dimmed"
+              className="font-mono text-15 font-bold text-grey-light"
               href="/career"
             >
               Careers
@@ -96,7 +96,7 @@ export default function Navbar() {
           </div>
 
           <Link className="" onClick={handleOpen} href="/career">
-            <button className="bg-yellow-dark px-9 py-3 font-mono text-15 font-bold text-grey-snow">
+            <button className="bg-yellow-dark px-10 py-3 font-mono text-15 font-bold text-grey-snow">
               Get Scootin
             </button>
           </Link>

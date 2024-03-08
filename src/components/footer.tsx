@@ -28,9 +28,9 @@ export default function Footer() {
       </div>
       <div className="flex flex-col items-center gap-10 bg-grey-darker px-8 py-16 md:flex-row md:justify-between md:py-9 lg:px-40">
         <div className="flex flex-col items-center gap-10 md:flex-row md:gap-x-14">
-          <div>
+          <Link className="" href="/">
             <Logo type="footer" />
-          </div>
+          </Link>
           <div className="flex flex-col items-center gap-4 font-mono md:flex-row md:gap-8">
             <Link
               className="font-mono text-15 font-bold capitalize text-grey-dimmed"
