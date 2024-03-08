@@ -70,7 +70,7 @@ export default function Navbar() {
       <div
         className={`${open ? "fixed" : "hidden"} top-[77px] h-full w-full bg-grey-darker/70`}
       >
-        <div className="grid h-full w-2/3 gap-80 bg-grey-darker pb-6 pl-8 pt-16">
+        <div className="grid h-full w-2/3 gap-80 bg-grey-darker pb-8 pl-8 pt-16">
           <div className="flex flex-col gap-6">
             <Link
               onClick={handleOpen}
