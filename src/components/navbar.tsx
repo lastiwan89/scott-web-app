@@ -73,18 +73,21 @@ export default function Navbar() {
         <div className="flex h-full w-2/3 flex-col gap-80 bg-grey-darker pb-6 pl-8 pt-16">
           <div className="flex flex-col gap-6">
             <Link
+              onClick={handleOpen}
               className="font-mono text-15 font-bold text-grey-dimmed"
               href="/about"
             >
               About
             </Link>
             <Link
+              onClick={handleOpen}
               className="font-mono text-15 font-bold text-grey-dimmed"
               href="/location"
             >
               Location
             </Link>
             <Link
+              onClick={handleOpen}
               className="font-mono text-15 font-bold text-grey-dimmed"
               href="/career"
             >
@@ -92,7 +95,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <Link className="" href="/career">
+          <Link className="" onClick={handleOpen} href="/career">
             <button className="bg-yellow-dark px-9 py-3 font-mono text-15 font-bold text-grey-snow">
               Get Scootin
             </button>
