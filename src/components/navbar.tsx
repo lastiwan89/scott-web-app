@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     // logo position need to fix
-    <nav className="relative flex items-center justify-center gap-x-16 px-8 py-6 md:justify-between lg:px-40">
+    <nav className="relative flex items-center justify-center gap-x-16 px-8 py-6 md:block lg:px-40">
       <div className="absolute left-8 top-8 md:hidden" onClick={handleOpen}>
         {!open ? (
           <Image
@@ -32,12 +32,12 @@ export default function Navbar() {
         )}
       </div>
 
-      <div className="flex items-center md:justify-start md:gap-14">
-        <Link href="/">
-          <Logo />
-        </Link>
-        <div className="hidden flex-col justify-start md:flex md:flex-row md:justify-start">
-          <div className="flex flex-col items-center gap-8 md:flex-row">
+      <div className="">
+        <div className="flex items-center md:justify-between md:gap-14">
+          <Link href="/">
+            <Logo />
+          </Link>
+          <div className="hidden flex-col items-center gap-8 md:flex md:flex-row">
             <Link
               className="font-mono text-15 font-bold text-grey-dimmed"
               href="/about"
@@ -58,7 +58,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <Link className="ml-auto" href="/career">
+          <Link className="hidden md:ml-auto md:block" href="/career">
             <button className="bg-yellow-dark px-9 py-3 font-mono text-15 font-bold text-grey-snow">
               Get Scootin
             </button>
