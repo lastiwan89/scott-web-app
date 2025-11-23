@@ -4,13 +4,13 @@ import React from "react";
 export default function Location() {
   return (
     <div>
-      <section className="career-hero grid place-content-center py-16">
-        <h2 className="text-center font-mono text-40 font-bold text-grey-snow">
+      <section className="career-hero flex items-center justify-center py-16 md:justify-start md:px-24 md:py-24">
+        <h2 className="text-center font-mono text-40 font-bold text-grey-snow md:text-start">
           Locations
         </h2>
       </section>
       <section className="flex flex-col items-center px-8">
-        <div className="flex items-center pt-14">
+        <div className="flex items-center pt-14 md:py-36">
           <Image
             className="md:hidden"
             src="/images/world-map-mobile.png"
@@ -34,7 +34,8 @@ export default function Location() {
           />
         </div>
 
-        <div className="flex flex-col gap-4 px-8 py-8">
+        {/* i hide this for moment */}
+        <div className="flex flex-col gap-4 px-8 py-8 md:hidden">
           <button className="bg-yellow-dark/40 px-24 py-5 font-mono text-24 font-bold text-grey-dark">
             New York
           </button>
@@ -50,8 +51,9 @@ export default function Location() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center gap-8 px-8 pb-14 pt-8">
-        <h4 className="text-center font-mono text-32 font-bold text-grey-dark">
+      {/* i'm sorry i use padding in 'Your City' text to get new line look */}
+      <section className="flex flex-col items-center gap-8 px-8 pb-14 pt-8 md:px-24 md:pb-28">
+        <h4 className="text-center font-mono text-32 font-bold text-grey-dark md:px-10 md:text-48">
           Your City Not Listed?
         </h4>
         <p className="text-center font-sans text-15 font-normal text-grey-dimmed">
